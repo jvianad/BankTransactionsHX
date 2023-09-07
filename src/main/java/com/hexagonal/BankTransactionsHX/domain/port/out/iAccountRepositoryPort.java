@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface iAccountRepositoryPort {
-    Account saveAccount(Account task);
+    Account saveAccount(Account account);
     Optional<Account> findAccountById(Long id);
     boolean deleteAccount(Long id);
     List<Account> getAllAccounts();

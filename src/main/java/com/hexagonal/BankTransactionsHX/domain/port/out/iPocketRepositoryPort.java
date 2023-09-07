@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface iPocketRepositoryPort {
-    Pocket savePocket(Pocket task);
+    Pocket savePocket(Pocket pocket);
     Optional<Pocket> findPocketById(Long id);
     boolean deletePocket(Long id);
-    List<Pocket> getAllTasks();
+    List<Pocket> getAllPockets();
     Optional<Pocket> updatePocket(Pocket pocket);
 }
