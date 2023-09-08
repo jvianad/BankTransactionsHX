@@ -11,4 +11,5 @@ public interface iPocketRepositoryPort {
     boolean deletePocket(Long id);
     List<Pocket> getAllPockets();
     Optional<Pocket> updatePocket(Pocket pocket);
+    boolean tranfertoPocket(String accountNumber, String pocketNumber, double amount);
 }

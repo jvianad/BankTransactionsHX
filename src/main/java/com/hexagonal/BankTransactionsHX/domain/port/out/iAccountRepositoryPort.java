@@ -10,4 +10,6 @@ public interface iAccountRepositoryPort {
     boolean deleteAccount(Long id);
     List<Account> getAllAccounts();
     Optional<Account> updateAccount(Account account);
+    boolean transferBetweenAccounts(String sourceAccountNumber, String destinationAccount, double amount);
+    void deposit(String accountNumber, double amount);
 }

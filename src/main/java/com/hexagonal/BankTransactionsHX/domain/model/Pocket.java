@@ -2,18 +2,18 @@ package com.hexagonal.BankTransactionsHX.domain.model;
 
 public class Pocket {
     private Integer id;
-
+    private String pocketNumber;
     private String pocketName;
-
-    private double initial_balance;
+    private double initialBalance;
 
     public Pocket() {
     }
 
-    public Pocket(Integer id, String pocketName, double initial_balance) {
+    public Pocket(Integer id, String pocketNumber, String pocketName, double initialBalance) {
         this.id = id;
+        this.pocketNumber = pocketNumber;
         this.pocketName = pocketName;
-        this.initial_balance = initial_balance;
+        this.initialBalance = initialBalance;
     }
 
     public Integer getId() {
@@ -24,6 +24,14 @@ public class Pocket {
         this.id = id;
     }
 
+    public String getPocketNumber() {
+        return pocketNumber;
+    }
+
+    public void setPocketNumber(String pocketNumber) {
+        this.pocketNumber = pocketNumber;
+    }
+
     public String getPocketName() {
         return pocketName;
     }
@@ -32,11 +40,11 @@ public class Pocket {
         this.pocketName = pocketName;
     }
 
-    public double getInitial_balance() {
-        return initial_balance;
+    public double getInitialBalance() {
+        return initialBalance;
     }
 
-    public void setInitial_balance(double initial_balance) {
-        this.initial_balance = initial_balance;
+    public void setInitialBalance(double initialBalance) {
+        this.initialBalance = initialBalance;
     }
 }
