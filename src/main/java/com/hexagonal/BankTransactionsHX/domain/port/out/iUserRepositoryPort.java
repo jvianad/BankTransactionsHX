@@ -10,5 +10,5 @@ public interface iUserRepositoryPort {
     Optional<User> findUserById(Long id);
     boolean deleteUser(Long id);
     List<User> getAllUser();
-    Optional<User> updateUser(User task);
+    Optional<User> updateUser(Long id, User user);
 }

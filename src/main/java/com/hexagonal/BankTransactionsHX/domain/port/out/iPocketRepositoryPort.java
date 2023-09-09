@@ -10,6 +10,6 @@ public interface iPocketRepositoryPort {
     Optional<Pocket> findPocketById(Long id);
     boolean deletePocket(Long id);
     List<Pocket> getAllPockets();
-    Optional<Pocket> updatePocket(Pocket pocket);
+    Optional<Pocket> updatePocket(Long id, Pocket pocket);
     boolean tranfertoPocket(String accountNumber, String pocketNumber, double amount);
 }
